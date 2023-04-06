@@ -248,6 +248,7 @@ def parse_arguments():
     parser.add_argument('--speak', action='store_true', help='Enable Speak Mode')
     parser.add_argument('--debug', action='store_true', help='Enable Debug Mode')
     parser.add_argument('--gpt3only', action='store_true', help='Enable GPT3.5 Only Mode')
+    parser.add_argument('--use_fc_vicuna', action='store_true', help='Enable local vicuna-13b')
     args = parser.parse_args()
 
     if args.continuous:
